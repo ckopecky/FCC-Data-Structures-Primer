@@ -86,7 +86,7 @@ class Stack {
     }
     
     peekElement(){
-      return this.storage[this.storage.length - 1];
+      return this.storage[this.storage.length - 1]  ? this.storage[this.storage.length - 1] : null;
     }
   }
   
@@ -96,7 +96,12 @@ class Stack {
   myStack.pushElement("freeCodeCamp")
   console.log(myStack.peekElement(), "peek");
   console.log(myStack);
-  myStack.popElement();
+  console.log(myStack.popElement());
+  console.log(myStack.popElement());
+  console.log(myStack.popElement());
+  console.log(myStack.popElement());
+  console.log(myStack);
+
   console.log(myStack.peekElement(), "peek");
   console.log(myStack);
   console.log(myStack.sizeStorage(), "size")
